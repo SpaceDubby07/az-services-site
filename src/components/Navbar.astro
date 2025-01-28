@@ -3,10 +3,9 @@
 
   function updateScrollPosition() {
     scrollPosition = window.scrollY;
-    console.log(scrollPosition);
     const header = document.querySelector('header');
     if (header) {
-      if (scrollPosition > 800) {
+      if (scrollPosition > 400) {
         header.classList.add('hidden');
         header.classList.remove('backdrop-blur-md'); // Optional: Remove the blur if hidden
       } else if (scrollPosition > 100) {
