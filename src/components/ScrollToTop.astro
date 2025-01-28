@@ -1,0 +1,41 @@
+<div
+  class="md:flex items-center justify-center my-4 fixed bottom-0 right-4 hidden"
+>
+  <button
+    data-tooltip-target="scrollToTop"
+    id="scrollToTopBtn"
+    class="p-4 rounded-full bg-slate-800 h-16 w-16 hover:bg-red-500 hover:animate-pulse hover:shadow-orange-400 shadow-2xl"
+  >
+    <img src="/images/rocket.png" alt="" />
+  </button>
+
+  <div
+    id="scrollToTop"
+    role="tooltip"
+    class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700"
+  >
+    Top
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+</div>
+
+<script>
+  // Get the button
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+  if (scrollToTopBtn) {
+    // Add a click event listener
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Optional: Show the button only after scrolling down a bit
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 1000) {
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    });
+  }
+</script>

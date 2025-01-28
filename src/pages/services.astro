@@ -1,0 +1,118 @@
+---
+import ServiceLayout from '../layouts/ServiceLayout.astro';
+---
+
+<ServiceLayout pageTitle="Name | Services">
+  <section
+    id="hero"
+    class="bg-slate-950 text-white pt-40 min-h-screen pb-20 mb-20"
+  >
+    <div class="flex flex-col justify-center items-center">
+      <h2 class="text-3xl font-bold text-center mb-6">Services</h2>
+      <p class="text-center mb-8 text-gray-400 mx-20">
+        We specialize in simplifying the immigration process by
+        assisting individuals and families with preparing and
+        submitting essential U.S. immigration paperwork. Our services
+        include completing and filing applications for green cards,
+        citizenship, work permits, and other immigration-related
+        forms. We ensure accuracy, compliance, and timely submissions
+        through online filing, reducing stress and streamlining the
+        path to your immigration goals. Let us help you navigate the
+        complexities of the immigration process with confidence and
+        ease.
+      </p>
+      <a
+        class="p-4 rounded-md bg-slate-800 hover:bg-slate-600"
+        href="/contact">Contact Us</a
+      >
+    </div>
+    <div class="relative overflow-x-auto mx-10 mt-20">
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3"> Service </th>
+            <th scope="col" class="px-6 py-3"> Price </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              Application
+            </th>
+            <td class="px-6 py-4"> $2000 </td>
+          </tr>
+          <tr
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              Filing
+            </th>
+            <td class="px-6 py-4"> $500 </td>
+          </tr>
+          <tr
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              something
+            </th>
+            <td class="px-6 py-4"> $500 </td>
+          </tr>
+          <tr
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              something
+            </th>
+            <td class="px-6 py-4"> $500 </td>
+          </tr>
+          <tr
+            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+          >
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              something
+            </th>
+            <td class="px-6 py-4"> $500 </td>
+          </tr>
+          <tr class="bg-white dark:bg-gray-800">
+            <th
+              scope="row"
+              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+            >
+              something
+            </th>
+            <td class="px-6 py-4"> $5 </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</ServiceLayout>
+
+<style>
+  #hero {
+    background-image: url('/images/bg.svg');
+    background-size: cover;
+    background-position: center;
+  }
+</style>
