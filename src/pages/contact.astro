@@ -15,17 +15,24 @@ import ServiceLayout from '../layouts/ServiceLayout.astro';
 
     <div class="flex flex-col items-center justify-center gap-4">
       <a
-        class="p-6 rounded-md bg-slate-800 hover:bg-slate-600"
-        href="tel:123-456-7890"
+        class="p-6 rounded-md bg-slate-800 hover:bg-slate-600 w-56"
+        href="tel:860-983-9218"
         ><i class="bi bi-telephone-fill text-green-500"></i><span
-          class="mx-4">Call</span
+          class="mx-4">Call Amanda</span
         ></a
       >
       <a
-        class="p-6 rounded-md bg-slate-800 hover:bg-slate-600"
+        class="p-6 rounded-md bg-slate-800 hover:bg-slate-600 w-56"
+        href="tel:860-833-7606"
+        ><i class="bi bi-telephone-fill text-green-500"></i><span
+          class="mx-4">Call Zach</span
+        ></a
+      >
+      <a
+        class="p-6 rounded-md bg-slate-800 hover:bg-slate-600 w-56"
         href="mailto:test@test.com"
         ><i class="bi bi-envelope-at-fill text-green-500"></i><span
-          class="mx-4">Email</span
+          class="mx-4">Email Us</span
         ></a
       >
     </div>
@@ -74,6 +81,20 @@ import ServiceLayout from '../layouts/ServiceLayout.astro';
             id="phone"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
+        </div>
+        <div class="mb-5">
+          <label
+            for="contact"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Who would you like to speak to?</label
+          >
+          <select
+            id="contact"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          >
+            <option value="Amanda">Amanda</option>
+            <option value="Zach">Zach</option>
+          </select>
         </div>
         <div class="mb-5">
           <label

@@ -5,7 +5,7 @@
     scrollPosition = window.scrollY;
     const header = document.querySelector('header');
     if (header) {
-      if (scrollPosition > 400) {
+      if (scrollPosition > 200) {
         header.classList.add('hidden');
         header.classList.remove('backdrop-blur-md'); // Optional: Remove the blur if hidden
       } else if (scrollPosition > 100) {
@@ -24,8 +24,14 @@
 
 <header class="fixed w-full z-10">
   <nav class="flex items-center justify-between p-4">
-    <div class="text-white text-2xl font-bold">
-      <a href="/">Logo</a>
+    <div class="relative text-white text-2xl font-bold">
+      <a href="/" class="relative inline-block">
+        <img src="images/seal.png" class="h-12" alt="" />
+        <span
+          class="absolute inset-0 flex items-center text-sm justify-center text-white"
+          >AZ</span
+        >
+      </a>
     </div>
     <div class="space-x-2">
       <a
